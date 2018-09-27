@@ -82,6 +82,7 @@ app.get('/issues', (req, res) => res.redirect(301, 'https://github.com/electron/
 app.get('/issues/new', (req, res) => res.redirect(301, 'https://github.com/electron/electronjs.org/issues/new'))
 app.get('/languages', routes.languages.index)
 app.get('/maintainers/join', (req, res) => res.redirect('https://goo.gl/FJmZZm'))
+app.get('/people', routes.people);
 app.get('/pulls', (req, res) => res.redirect(301, 'https://github.com/electron/electronjs.org/pulls'))
 app.get('/releases', routes.releases.index)
 app.get('/spectron', routes.spectron)
